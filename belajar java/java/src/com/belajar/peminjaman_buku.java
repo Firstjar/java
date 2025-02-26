@@ -19,7 +19,7 @@ int pilih;
 do
 {
 System.out.println("\t\t\t*** SMK NEGERI 4 PAYAKUMBUH ***");
-System.out.println("\t\t\t-- MENU UTAMA --");
+System.out.println("\t\t\t\t-- MENU UTAMA --");
 System.out.println("1. Input Buku");
 System.out.println("2. Daftar Buku");
 System.out.println("3. Pencarian");
@@ -70,7 +70,7 @@ banyak+=jml;
 System.out.print("Buku berhasil disimpan !");
 }
 public static void daftarBuku(){
-System.out.println("Kode     Judul     Pengarang     Tahun");
+System.out.println("Kode        Judul        Pengarang       Tahun");
 System.out.println("=============================================");
 int tkode,ttahun;
 String tjudul,tpengarang;

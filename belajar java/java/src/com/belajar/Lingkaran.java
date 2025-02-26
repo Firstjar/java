@@ -1,27 +1,19 @@
-package com.belajar;
-import java.util.Scanner;
+package tugas_java.com.tugas;
 
-public class Lingkaran {
+public class Lingkaran extends bangunDatar {
+    int r;
 
-    int jari;
-    double pi = 3.14;
-
-    void input(int jari, double pi){
-        this.jari = jari;
-        this.pi = pi;
+    public Lingkaran(int r) {
+        this.r = r;
     }
-
-    double hitungLuas(){
-        return pi*jari*jari;
+    
+    @Override
+    public float luas(){
+        return (float) (Math.PI * r * r);
     }
-
-    public static void main(String[] args) {
-        Scanner Input = new Scanner(System.in);
-
-        Lingkaran lingkarann = new Lingkaran();
-        System.out.print("Masukkan jari-jari : ");
-        int r = Input.nextInt();
-        lingkarann.input(r, 3.14);
-        System.out.println("Luas lingkaran adalah "+lingkarann.hitungLuas());
+    
+    @Override
+    public float keliling(){
+        return (float) (2 * Math.PI * r);
     }
 }
